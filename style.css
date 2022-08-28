@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(213, 58, 58);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+button {
+    text-align: center;
+    width: 50vw;
+    position: absolute;
+    align-items: center;
+    left: 25%;
+    top: 85%;
+    justify-content: center;
+    border: none;
+    background-color: rgb(218, 46, 80);
+    color: white;
+    padding: 1.1em;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.container {
+    background-color: gold;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slot-item {
+    background-color: black;
+    padding: .7em;
+}
+
+.slot-img {
+    background-color: white;
+    padding: .7em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slot-item .slot-img img {
+    width: 15vw;
+    height: 35vh;
+}
+
+.slot-img img.animate {
+    animation: slideSlut 0.1s ease-in-out infinite;
+}
+
+@keyframes slideSlut {
+    0% {
+        filter: blur(10px);
+        transform: translateY(-200px);
+    }
+
+    100% {
+        filter: blur(10px);
+        transform: translateY(300px);
+    }
+}
